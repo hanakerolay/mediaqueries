@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <title>Mediaqueries</title>
 </head>
 <body>
+    
+    <div class="container">
+        <h1>Cadastro de peças</h1>  
+        <div class="form-box">
+            <form action="">
+
+                <label for="peça">Número da peça</label>
+                <input name="Número da peça" id="Número da peça" type="text" placeholder="Digite o número da peça" required>
+                
+                <label for="Preçoreal">Preço em real R$</label>
+                <input name="Preçoemreal" id="Preçoemreal" type="text" placeholder="Digite o valor" required>
+                
+                <label for="Quantidadeestoque">Quantidade em estoque</label>
+                <input name="Quantidadeestoque" id="Quantidadeestoque" type="number" step="1" min="0" max="200" placeholder="Digite a quantidade em estoque" required>
+                
+                <label for="almoxarifado">Localização no almoxarifado</label>
+                <input name="Localizaçãoalmoxarifador" id="Localizaçãoalmoxarifado" type="text" step="0.01" min="0" placeholder="Digite o localização no almoxarifado" required>
+                
+                <label for="Códigopeça">Código da peça</label>
+                <input name="Códigodapeça" id="Códigodapeça" type="text" placeholder="Digite o Código da peça" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
         </div>
+    </div>    
 </body>
 </html>
