@@ -1,42 +1,77 @@
-.card-description {
-    font-size: 14px;
-    color: #666;
+* { 
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+body {
+    background-color: #f19ddf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.card {
-    border: 1px solid #ccc;
+.container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
     padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-box {
+    background-color: #f50eb0;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.form-box h1 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.form-box label {
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+    color: #2b2828;
+}
+
+.form-box input[type="text"],
+.form-box input[type="number"],
+.form-box input[type="datetime-local"],
+.form-box input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff; /* Adjust width for side-by-side display */
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
-@media only screen and (max-width: 1199px){
-    body {
-        background-color: fuchsia;
-    }
-    .card-container {
-        display: block;
-    }
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5ddd61;
+    border: none;
+    border-radius: 5px;
+    color: rgb(63, 6, 46);
+    font-size: 18px;
+    cursor: pointer;
+    
 }
 
+@media (max-width: 900px) {
+    .form-box {
+        max-width: 450px;
+        padding: 20px;
+        background-color: #8719d1;
+    }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    body {
-        background-color: orange;
-    }
-    .card-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
 }
-
+@media only screen and (max-width: 1199px) {
+        body {
+        background-color: rgb(54, 241, 210);
+    }
