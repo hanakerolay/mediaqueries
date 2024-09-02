@@ -69,9 +69,11 @@ body {
         padding: 20px;
         background-color: #8719d1;
     }
-
 }
+
+
 @media only screen and (max-width: 1199px) {
         body {
         background-color: rgb(54, 241, 210);
     }
+}
